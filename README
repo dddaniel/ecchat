@@ -1,0 +1,17 @@
+ECCHAT *** PRE ALPHA ***
+
+
+Ecchat is a chat system that uses Eliptic Curve Cryptography.
+
+How does it work ?
+
+Clients and Servers verify each other using a PKI.
+The server only holds contact lists and accepts clients
+signed by the same CA.
+
+All communication is End to End encrypted and signed.
+
+Scripts for creating CAs and Clients are in ./ca-scripts
+
+
+More details and examples will follow ...
