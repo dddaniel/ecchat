@@ -26,7 +26,7 @@ endef
 define Package/ecchatd/install
 	$(INSTALL_DIR) $(1)/usr/bin $(1)/etc/init.d
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ecchatd $(1)/usr/bin/
-	#$(INSTALL_BIN) ./files/ecchatd.init $(1)/etc/init.d/ecchatd
+	$(INSTALL_BIN) ./files/ecchatd.init $(1)/etc/init.d/ecchatd
 endef
 
 $(eval $(call BuildPackage,ecchatd))
