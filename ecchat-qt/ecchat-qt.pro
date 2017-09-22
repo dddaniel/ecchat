@@ -1,6 +1,6 @@
 QT += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-QMAKE_CXXFLAGS += -Wextra -g3 -O2
+QMAKE_CXXFLAGS += -Wextra -O2
 TARGET = ecchat-qt
 RESOURCES = ecchat-qt.qrc
 
@@ -16,6 +16,7 @@ linux:{
 	LIBS += -lmbedtls -lmbedcrypto -lmbedx509
  	SOURCES += client_posix.cpp
 	ICON = icon.ico
+	QMAKE_CXXFLAGS += -g3
 }
 
 macx:{
